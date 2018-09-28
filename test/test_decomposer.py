@@ -14,7 +14,7 @@ class TestDecomposer(unittest.TestCase):
     	decomp = decompose_word("한국a어")
         self.assertEqual(decomp, ["ㅎ", "ㅏ", "ㄴ", "ㄱ", "ㅜ", "ㄱ", "a", "ㅇ", "ㅓ"])
 
-    def test_word_decompose_def_rem(self):
+    def test_word_decompose_rem(self):
     	decomp = decompose_word("한국a어", discard_non_korean=True)
         self.assertEqual(decomp, ["ㅎ", "ㅏ", "ㄴ", "ㄱ", "ㅜ", "ㄱ", "ㅇ", "ㅓ"])
 
